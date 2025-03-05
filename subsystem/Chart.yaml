@@ -1,0 +1,7 @@
+# Chart.yaml in your service chart
+apiVersion: v2
+name: subsystem
+version: 0.1.0
+dependencies:
+  - name: my-service
+    

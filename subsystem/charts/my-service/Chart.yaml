@@ -1,0 +1,10 @@
+# Chart.yaml in your service chart
+apiVersion: v2
+name: my-service
+version: 0.1.0
+dependencies:
+  - name: helmet
+    version: ^0
+    repository: https://charts.companyinfo.dev
+    import-values:
+      - defaults

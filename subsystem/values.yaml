@@ -1,0 +1,5 @@
+# values.yaml in your umbrella chart
+#global:
+#  myGlobalValue: "global-value"  # Set this to test inclusion
+# global:
+#   myGlobalValue: ""           # Or leave it empty/unset to test exclusion

@@ -1,0 +1,7 @@
+# templates/app.yaml in your service chart
+{{- $values := .Values | default dict -}}
+{{- if .Values.global.myGlobalValue -}}
+{{- $envVars := list (dict "name" "MY_CUSTOM_ENV_VAR" "value" .Values.global.myGlobalValue) -}}
+{{- $values = merge $values (dict "envVars" $envVars) -}}
+{{- end -}}
+{{ include "helmet.app" (merge $values .) }}
